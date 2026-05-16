@@ -1,0 +1,88 @@
+name: agrisense_ai
+description: AGROKSHA AI - Smart Farming. Intelligent Future. by TEAM SARA
+
+# Prevents accidental publishing to pub.dev
+publish_to: 'none'
+
+version: 2.1.0+3
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Design
+  google_fonts: ^6.2.1
+  flutter_animate: ^4.5.0
+  shimmer: ^3.0.0
+  lottie: ^3.1.2
+  cached_network_image: ^3.3.1
+
+  # State Management
+  provider: ^6.1.2
+
+  # Networking (Open-Meteo weather API)
+  http: ^1.2.2
+
+  # Storage & Preferences
+  shared_preferences: ^2.2.3
+
+  # Localization (English / Telugu / Hindi)
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
+
+  # Charts
+  fl_chart: ^0.68.0
+
+  # Utils
+  url_launcher: ^6.3.2
+  flutter_tts: ^4.2.5
+  flutter_map: ^8.3.0
+  latlong2: ^0.9.1
+  speech_to_text: ^7.3.0
+  geolocator: ^14.0.2
+  geocoding: ^4.0.0
+  image_picker: ^1.1.2
+
+  # QR Code + Sharing (Farm ID)
+  qr_flutter: ^4.1.0
+  screenshot: ^3.0.0
+  share_plus: ^10.0.0
+  path_provider: ^2.1.4
+
+  # Offline mode
+  connectivity_plus: ^6.1.0
+
+  # e-NAM WebView
+  webview_flutter: ^4.10.0
+  record: ^6.2.0
+  audioplayers: ^6.6.0
+  envied: ^1.3.4
+  flutter_secure_storage: ^10.1.0
+  supabase_flutter: ^2.8.2
+  google_sign_in: ^6.2.2
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.14.1
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  envied_generator: ^1.3.4
+  build_runner: ^2.15.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: 'assets/images/agroksha_logo.png'
+  min_sdk_android: 21
+  adaptive_icon_background: '#000000'
+  adaptive_icon_foreground: 'assets/images/agroksha_logo.png'

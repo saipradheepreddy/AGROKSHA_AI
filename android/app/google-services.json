@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "13320738770",
+    "project_id": "agroksha-ai",
+    "storage_bucket": "agroksha-ai.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13320738770:android:b80f3206807d85244c9a0b",
+        "android_client_info": {
+          "package_name": "com.teamsara.agroksha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13320738770-4ib3llr57l9pnukfskuca555ifue5cgm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teamsara.agroksha",
+            "certificate_hash": "a6d3840b3774032c597cd8fb7bfabbc2891b40bc"
+          }
+        },
+        {
+          "client_id": "13320738770-83vrg4j2eb2fvjfl0ah1nd81kugq5u3v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teamsara.agroksha",
+            "certificate_hash": "ca40807a79ae2ab3133e5e8d86ea0bb9f41c5e44"
+          }
+        },
+        {
+          "client_id": "13320738770-0enknjfs81erif37pk22frnlitpoep6r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJGmb2A2hJEm6FKM6qa7xz4b03ohP_qmw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13320738770-0enknjfs81erif37pk22frnlitpoep6r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
