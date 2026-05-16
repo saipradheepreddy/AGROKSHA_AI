@@ -1,70 +1,109 @@
 # AGROKSHA AI 🌾
 **Smart Farming. Intelligent Future.**
 
-AGROKSHA AI is a state-of-the-art, production-ready Flutter application designed to empower Indian farmers with real-time intelligence, AI-driven insights, and a secure digital identity.
+[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
+[![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com)
+[![Llama-3](https://img.shields.io/badge/Llama--3-0668E1?style=for-the-badge&logo=meta&logoColor=white)](https://ai.meta.com/llama/)
+[![Project Status](https://img.shields.io/badge/Status-Production--Ready-success?style=for-the-badge)](https://github.com/saipradheepreddy/AGROKSHA_AI)
+
+AGROKSHA AI is a state-of-the-art, production-ready intelligence platform designed to empower 150+ million Indian farmers. It serves as a flagship module under **SARA Ecosystems** and is a cornerstone of the **Tiranga Eco System**—a national-scale initiative for rural digital empowerment.
 
 ---
 
-## 🌟 Key Features
-
-- **🤖 Virtual Scientist (AI)**: Real-time, localized farming advice powered by Groq Llama-3 & RAG.
-- **☁️ Supabase Integration**: Secure Authentication, real-time Database, and scalable backend orchestration.
-- **🌤 Smart Weather Engine**: Hyper-local forecasts and "Safe-to-Spray" predictive windows.
-- **📊 Mandi Pulse**: Real-time market trends and MSP 2026 data across 1,000+ APMC locations.
-- **🆔 Digi Farm ID**: A sovereign digital identity for farmers with verifiable QR codes.
-- **🌐 Multi-Language support**: Full localized support for English, Telugu, and Hindi.
-- **🌗 Immersive UI**: Premium Dark Mode and "Rural-First" design philosophy.
+## 🌌 The Ecosystem Vision
+AGROKSHA AI is part of the **SARA Ecosystems** intelligence framework, working in synergy with:
+- **SARA VEDIQ**: Deep Agricultural Knowledge Base.
+- **SARA LUMINA**: Digital Identity & Trust Verification.
+- **Tiranga Eco System**: National-scale deployment & empowerment framework.
 
 ---
 
-## 🚀 Technical Stack
+## 🚀 Key Features
 
-- **Frontend**: Flutter (Stable) with Provider for State Management.
-- **Backend**: Supabase (PostgreSQL, Auth, Edge Functions).
-- **Intelligence**: Groq LPU Inference (Llama-3-70B) & LangChain.
-- **Data APIs**: Open-Meteo, Agmarknet, e-NAM.
-- **Security**: AES-256 Encryption & Secure Environment Obfuscation (Envied).
+### 🤖 Virtual Scientist (AI RAG)
+A personalized AI scientist in the farmer's pocket. Powered by **Groq Llama-3-70B** and **Retrieval-Augmented Generation**, it provides hyper-local advice on crops, pests, and soil health.
+
+### 📊 Mandi Pulse (Market Intel)
+Real-time market tracking from 1,000+ APMC locations. Integrates with **Agmarknet** and **e-NAM** to provide the latest price trends and MSP 2026 data.
+
+### 🆔 Digi Farm ID
+A sovereign digital identity for farmers. Features a verifiable profile and secure storage for farm documents, integrated into the **LUMINA** trust network.
+
+### 🌤 Smart Weather & Spray Engine
+Hyper-local weather forecasts with a proprietary AI-driven **Spray Window** calculator to optimize pesticide and fertilizer application.
+
+---
+
+## 🏗 App Architecture
+
+```mermaid
+graph TD
+    A[Flutter Frontend] --> B[AppProvider]
+    B --> C[Supabase Auth & DB]
+    B --> D[Service Layer]
+    D --> E[Groq AI / RAG]
+    D --> F[Weather APIs]
+    D --> G[Market APIs]
+    C --> H[(Farmer Data)]
+```
 
 ---
 
 ## 🛠 Setup & Installation
 
-### 1. Prerequisites
-- Flutter SDK (>= 3.0.0)
-- Supabase Project (URL & Anon Key)
+### Prerequisites
+- Flutter SDK (>= 3.22.x)
+- Supabase Project Credentials
+- Groq API Key
 
-### 2. Environment Configuration
-Create a `.env` file in the root directory:
-```env
-GROQ_API_KEY=your_groq_key
-SUPABASE_URL=your_supabase_url
-SUPABASE_ANON_KEY=your_supabase_anon_key
-```
-
-### 3. Run Build Runner
-Generate the secure environment variables:
-```bash
-dart run build_runner build --delete-conflicting-outputs
-```
-
-### 4. Launch the App
-```bash
-flutter pub get
-flutter run
-```
+### Configuration
+1. Clone the repository.
+2. Create a `.env` file in the root:
+   ```env
+   GROQ_API_KEY=your_key
+   SUPABASE_URL=your_url
+   SUPABASE_ANON_KEY=your_key
+   ```
+3. Generate secure environment:
+   ```bash
+   dart run build_runner build --delete-conflicting-outputs
+   ```
+4. Launch:
+   ```bash
+   flutter run
+   ```
 
 ---
 
-## 📁 Architecture Overview
-
-- `lib/services/`: Modular service layer for AI, Supabase, and Weather.
-- `lib/utils/app_provider.dart`: Centralized state management and auth logic.
-- `lib/models/`: Strongly-typed entity models for farmers and crops.
-- `lib/theme/`: Branded "Agroksha" Design System with Material 3.
+## 🌐 Supported Languages
+- **English** (Primary)
+- **తెలుగు (Telugu)** (Native)
+- **हिन्दी (Hindi)** (Regional)
 
 ---
 
-## 🎯 Our Mission
-To bridge the digital information gap for 150 million Indian farmers, moving agriculture from a high-risk gamble to a data-driven enterprise.
+## 🗺 Documentation Links
+- [Project Overview](./PROJECT_OVERVIEW.md)
+- [Feature Breakdown](./FEATURES.md)
+- [Future Roadmap](./FUTURE_ROADMAP.md)
+- [Contributing Guidelines](./CONTRIBUTING.md)
+- [Security Policy](./SECURITY.md)
 
-**Developed with ❤️ by TEAM SARA**
+---
+
+## 🎯 Future Roadmap (2026-2030)
+- **Phase 2**: Computer Vision diagnosis (SARA VISIONIX).
+- **Phase 3**: IoT Integration & Drone scanning.
+- **Phase 4**: Carbon Credit monitoring and global scaling.
+
+---
+
+## 🤝 Community & Support
+Developed with a futuristic lens by **TEAM SARA** under **SARA Ecosystems**.
+
+- **Website**: [saraecosystems.com](https://saraecosystems.com)
+- **Contact**: contact@saraecosystems.com
+- **Tiranga Initiative**: [tiranga.eco](https://tiranga.eco)
+
+---
+*Moving agriculture from a high-risk gamble to a data-driven enterprise.*
